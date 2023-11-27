@@ -1,0 +1,7 @@
+# related to python
+*.pyc
+**/__pycache__/**
+
+# related to lsp
+.venv/
+pyrightconfig.json
