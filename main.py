@@ -1,15 +1,15 @@
+import os
 import sys
 
 import mariadb
 
-
-from queries import create_tables, TABLES, set_db
+from queries import TABLES, create_tables, set_db
 
 if __name__ == "__main__":
     try:
         conn = mariadb.connect(
-            user="root",
-            password="password",
+            password=os.environ.get("password"),
+            user=os.environ.get("username"),
             host="127.0.0.1",
             port=3306,
             # database="proyectofinal",
