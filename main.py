@@ -8,11 +8,13 @@ from queries import TABLES, create_tables, set_db
 if __name__ == "__main__":
     try:
         conn = mariadb.connect(
-            password=os.environ.get("password"),
+            # NOTE: configurar contrasena y usuario a traves de:
+            # export username="username"
+            # export password="password"
             user=os.environ.get("username"),
+            password=os.environ.get("password"),
             host="127.0.0.1",
             port=3306,
-            # database="proyectofinal",
         )
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
