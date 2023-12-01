@@ -3,7 +3,7 @@ import sys
 
 import mariadb
 
-from queries import TABLES, create_tables, set_db
+from queries import create_tables, set_db, tables
 
 if __name__ == "__main__":
     try:
@@ -28,4 +28,4 @@ if __name__ == "__main__":
 
     # Cracion de las tablas
     print("\n*** table creation ***\n")
-    create_tables(cur, TABLES)
+    create_tables(cur, tables)
