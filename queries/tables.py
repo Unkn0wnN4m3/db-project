@@ -65,8 +65,10 @@ tables["Representaciones"] = (
     "veces_interpretado INT(3), "
     "PRIMARY KEY (id_artista, id_papel), "
     "FOREIGN KEY (id_artista) REFERENCES Artistas(id_artista) "
+    "ON UPDATE CASCADE "
     "ON DELETE CASCADE, "
     "FOREIGN KEY (id_papel) REFERENCES Papeles(id_papel) "
+    "ON UPDATE CASCADE "
     "ON DELETE CASCADE"
     ") ENGINE = INNODB;"
 )
@@ -93,8 +95,10 @@ tables["Funciones"] = (
     "fecha DATE NOT NULL, "
     "PRIMARY KEY (id_funcion), "
     "FOREIGN KEY (id_teatro) REFERENCES Teatros(id_teatro) "
+    "ON UPDATE CASCADE "
     "ON DELETE CASCADE, "
     "FOREIGN KEY (id_obra) REFERENCES Obras(id_obra) "
+    "ON UPDATE CASCADE "
     "ON DELETE SET NULL"
     ") ENGINE = INNODB;"
 )
@@ -105,8 +109,10 @@ tables["Participaciones"] = (
     "id_funcion INT(10), "
     "PRIMARY KEY (id_artista,id_funcion), "
     "FOREIGN KEY (id_artista) REFERENCES Artistas(id_artista) "
-    "ON DELETE CASCADE ,"
+    "ON UPDATE CASCADE "
+    "ON DELETE CASCADE, "
     "FOREIGN KEY (id_funcion) REFERENCES Funciones(id_funcion) "
+    "ON UPDATE CASCADE "
     "ON DELETE CASCADE"
     ") ENGINE = INNODB;"
 )
