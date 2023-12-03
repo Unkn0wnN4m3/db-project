@@ -33,7 +33,6 @@ tables["Obras"] = (
     "titulo VARCHAR(50) UNIQUE, "
     "ano_publicacion YEAR, "
     "veces_representado INT(3), "
-    # WARN: Agregar vetada y reprogramada en el mapa
     "vetada BOOLEAN DEFAULT FALSE, "
     "reprogramada BOOLEAN DEFAULT FALSE, "
     "id_autor INT(10), "
@@ -88,7 +87,6 @@ tables["Teatros"] = (
 
 tables["Funciones"] = (
     "CREATE TABLE IF NOT EXISTS Funciones ("
-    # WARN: Agregar id_funcion en el mapa
     "id_funcion INT(10) NOT NULL, "
     "id_teatro INT(10), "
     "id_obra INT(10), "
