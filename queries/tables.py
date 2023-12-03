@@ -80,7 +80,7 @@ tables["Teatros"] = (
     "direccion VARCHAR(100) NOT NULL, "
     "localidad VARCHAR(100), "
     "provincia VARCHAR(100), "
-    "telefono INT(12), "
+    "telefono BIGINT(14), "
     "categoria VARCHAR(100), "
     "aforo INT(6), "
     "PRIMARY KEY (id_teatro)"
