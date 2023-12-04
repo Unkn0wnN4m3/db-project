@@ -49,4 +49,4 @@ python3 main.py
 
 ## Diagrama
 
-![e-r diagram](./media/er-diagram2.png "diagrama entidad relacion")
+![e-r diagram](./media/dbdiagramio.png "diagrama entidad relacion")
