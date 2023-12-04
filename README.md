@@ -18,7 +18,7 @@ consola lo siguiente:
 sudo /opt/lampp/lampp start
 ```
 
-1. Una vez inicializado xampp, procedemos a instalar las dependencias de python
+2. Una vez inicializado xampp, procedemos a instalar las dependencias de python
 
 ```bash
 # Debemos ingresar al directorio del proyecto
@@ -33,7 +33,7 @@ source ./.venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
-1. exportamos la variables de entorno que contienen el usuario y la contrasena
+3. exportamos la variables de entorno que contienen el usuario y la contrasena
 de nuestra base de datos
 
 ```bash
@@ -41,7 +41,7 @@ export username="insetaelusuario"
 export password="insetalacontrasena"
 ```
 
-1. corre el programa
+4. corre el programa
 
 ```bash
 python3 main.py
