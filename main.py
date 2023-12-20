@@ -16,10 +16,12 @@ if __name__ == "__main__":
             # export password="password"
             user=os.environ.get("username"),
             password=os.environ.get("password"),
-            host="127.0.0.1",
+            # host="127.0.0.1",
+            host=os.environ.get("host"),
             port=3306,
             autocommit=True,
         )
+
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
         sys.exit(1)
